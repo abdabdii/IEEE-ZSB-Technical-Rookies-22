@@ -4,7 +4,10 @@ def fabNumbers(number : int):
     while (len(numbers) < number):
         numbers.append(numbers[currentIndex-2] + numbers[currentIndex-1])
         currentIndex +=1
-    return numbers
+    if number == 1:
+        return [0]
+    else:
+        return numbers
     
         
 try:
