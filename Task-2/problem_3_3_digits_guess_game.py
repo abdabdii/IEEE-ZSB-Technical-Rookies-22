@@ -69,7 +69,7 @@ def numberInput():
         exit()
         
 def intializeGame():
-    correctAnswer = randrange(100,1000)
+    correctAnswer = randrange(pow(10,digitsLength-1),pow(10,digitsLength))
     # Remove this line if you want to hide the correct answer
     print(correctAnswer)
     guessedNumber = numberInput()
