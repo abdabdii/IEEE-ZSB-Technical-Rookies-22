@@ -12,14 +12,16 @@ def getResults(guessedNumber : int, correctNumber : int):
     hitsAndMisses = {'hits':0 , 'miss':0}
     guessedNumberStr = str(guessedNumber)
     correctNumberStr = str(correctNumber)
+    correctNumberArr = [digit for digit in correctNumberStr]
     
     for index, digit in enumerate(guessedNumberStr):
         if correctNumberStr[index] == digit:
             hitsAndMisses['hits'] += 1
-        elif digit in correctNumberStr:
+            correctNumberArr[index] = None
+       
+    for digit in guessedNumberStr:
+        if digit in correctNumberArr:
             hitsAndMisses['miss'] += 1
-        else:
-            continue
         
     return hitsAndMisses
 
