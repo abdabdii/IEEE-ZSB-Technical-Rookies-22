@@ -11,7 +11,7 @@ def getMaxCapacity(bottlesCapacities : list):
     for _ in range(0, fillableBottles):
         currentMax = max(bottlesCapacitiesCopy)
         maxCapacity += currentMax
-        if currentMax in bottlesCapacitiesCopy: bottlesCapacitiesCopy.remove(currentMax)
+        bottlesCapacitiesCopy.remove(currentMax)
     return maxCapacity
         
 #Test section for getMaxCapacity Function START      
