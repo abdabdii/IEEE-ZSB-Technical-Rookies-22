@@ -1,0 +1,11 @@
+### Task3 :
+- Problem 1 - Find if water can fill 2 bottles
+- Problem 2 - Between Two sets problem HackerRank
+- Problem 3 - Password Generator
+- Problem 4 - Kangaroos problem HackerRank
+- Problem 5 - Breaking best and worst records problem HackerRank
+- Problem 6 - 6174 problem
+- Problem 7 - Migatory Birds HackerRank
+- Problem 8 - Sock marchent HackerRank
+- Problem 9 - Counting Valleys HackerRank
+- Problem 10 - Drawing book HackerRank
