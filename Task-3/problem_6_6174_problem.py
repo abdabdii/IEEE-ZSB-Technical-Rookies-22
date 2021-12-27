@@ -22,9 +22,11 @@ def intializeSolution(number : int):
         number = transformNumber(number)
     return tries
 
+# Test section START
 test(intializeSolution(2111) == 5, 'Test Case 1. testing 2111')
 test(intializeSolution(9831) == 7, 'Test Case 2. testing 9831')
 test(intializeSolution(6174) == 0, 'Test Case 3. testing 6174')
+# Test section END
 
 try:
     number = int(input())

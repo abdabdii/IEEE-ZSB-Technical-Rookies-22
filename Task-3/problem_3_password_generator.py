@@ -1,21 +1,21 @@
 from random import randrange , shuffle
 
+# you can edit these variables to fit your prefrence
 passwordLength = 10
 constraints = {'specialCharactersMinLength':1, 'numbersMinLength' : 1 , 'includeUpperCase': True}
 specialCharacters = ['@', '#', '$','%', '&' ]
 
 
-# This function takes lowerOrUpper param if True it is lower if false It's Upper default is lower
+# This function takes lowerOrUpper param. if True it is lower if false It's Upper. default is lower
 def generateLowerCaseOrUpperCase(length : int, lowerOrUpper = True ):
     charsAsciiRange = [97,123] if lowerOrUpper else [65,91]
     chars = []
     
     if length > 0:
         chars.append(chr(randrange(charsAsciiRange[0],charsAsciiRange[1])))
-        currentChar = chr(randrange(charsAsciiRange[0],charsAsciiRange[1]))
         while len(chars) < length:
-            chars.append(currentChar)
             currentChar = chr(randrange(charsAsciiRange[0],charsAsciiRange[1]))
+            chars.append(currentChar)
     return chars
 
 def generateAlphabetChars(length : int):
