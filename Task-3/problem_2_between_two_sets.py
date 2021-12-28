@@ -1,4 +1,3 @@
-import os
 
 def checkIfNumberPasses(a, b , possibleNumber, loopLength):
     for index in range(0,loopLength):
