@@ -13,12 +13,12 @@ def bobAndString(S, T):
                 break
             else:
                 idx += 1
+        if TLength > len(S):
+            operations += TLength - len(S)
+            TLength = len(S)
         if not matched:
             if TLength == len(S):
                 operations += 1
-            if TLength > len(S):
-                operations += TLength - len(S)
-                TLength = len(S)
             else:
                 TLength += 1
             operations += 1
